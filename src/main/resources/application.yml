@@ -1,0 +1,22 @@
+appName: ConfigServer
+appDescription: config server for all ParthaRepo
+buildNumber: 1
+contactEmail: parthasarathiksrct@gmail.com
+releaseNumber: 1.0.0
+server:
+  port: 8888
+logging.level.org.springframework.cloud.config: DEBUG
+logging.level.org: DEBUG
+logging.level.com.homedepot: DEBUG
+logging.level.com.netflix: ERROR
+logging.level.org.springframework: DEBUG
+spring:
+  application:
+    name: ConfigServer
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/ParthaRepo/ConfigUris.git
+          username: ParthaRepo
+          password: e1968634aefae70abb2e9cb44bb4b5038d5a0d3b

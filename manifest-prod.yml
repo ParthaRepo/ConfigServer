@@ -1,0 +1,8 @@
+nherit: manifest-base.yml
+applications:
+- name: invFlrConfigServer
+  instances: 1
+  host: invFlrConfigServer
+  env:
+    JAVA_ENV: 'production'
+    SPRING_PROFILES_ACTIVE: production

@@ -1,0 +1,9 @@
+inherit: manifest-base.yml
+applications:
+- name: invFlrConfigServer-qa
+  instances: 1
+  host: invFlrConfigServer-qa
+  env:
+    JAVA_ENV: 'qa'
+    SPRING_PROFILES_ACTIVE: qa
+    JAVA_OPTS: "-Dhttp.proxyHost=str-www-proxy2-qa.homedepot.com -Dhttps.proxyHost=str-www-proxy2-qa.homedepot.com -Dhttps.proxyPort=8080 -Dhttp.proxyPort=8080"

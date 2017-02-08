@@ -1,0 +1,8 @@
+---
+memory: 750m
+buildpack: https://github.com/cloudfoundry/java-buildpack.git#v3.7
+instances: 1
+disk_quota: 1G
+random-route: false
+env:
+ SPRING_PROFILES_ACTIVE: cloud
